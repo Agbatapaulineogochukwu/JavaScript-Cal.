@@ -1,33 +1,31 @@
+function calculator (Addition, Subtraction, Multiplication, Division){
 
 
-
-    window.alert(firstNumber);
-    window.alert(secondNumber);
+    operation = this.calculator();
 
 
-    let firstNumber = prompt('Enter first number: ' + number1);
-    let secondNumber = prompt('Enter first number: ' + number2);
-
-    Addition == number1 + number2;
-    Subtraction == number1 - number2;
-    Multiplication == number1 * number2;
-    Division == number1 / number2;
-
-    if (Addition){
+    if (operation == Addition){
         return number1 + number2;
 
-    } else if (Subtraction){
+    } else if (operation == Subtraction){
         return number1 - number2;
 
-    } else if (Multiplication){
+    } else if (operation == Multiplication){
         return number1 * number2;
 
-    } else if (Division){
+    } else if (operation == Division){
         return number1 / number2;
 
     } else{
         return "Inavlid";
-    
+    }
 
 }
+
+alert(prompt('please enter operartion: '))
+alert(prompt('Enter first number: '));
+alert(prompt('Enter second number: '));
+
+calculator()
+
 
